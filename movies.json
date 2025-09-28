@@ -1,0 +1,60 @@
+{
+  "movies": [
+    {
+      "id": 1,
+      "name": "Your Name",
+      "rating": 8.2,
+      "director": "Makoto Shinkai",
+      "year": 2016,
+      "boxOffice": "$358.3 million",
+      "runtime": "106 minutes",
+      "genre": "Animation, Drama, Romance",
+      "image": "https://m.media-amazon.com/images/M/MV5BODRmZDVmNzUtZDA4ZC00NjhkLWI2M2UtN2M0ZDIzNDcxYThjL2ltYWdlXkEyXkFqcGdeQXVyNTk0MzMzODA@._V1_SX300.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Naruto Shippuden: The Lost Tower",
+      "rating": 6.8,
+      "director": "Masahiko Murata",
+      "year": 2010,
+      "boxOffice": "$15.2 million",
+      "runtime": "85 minutes",
+      "genre": "Animation, Action, Adventure",
+      "image": "lost_tower.png"
+    },
+    {
+      "id": 3,
+      "name": "Naruto Shippuden: Blood Prison",
+      "rating": 7.1,
+      "director": "Masahiko Murata",
+      "year": 2011,
+      "boxOffice": "$12.8 million",
+      "runtime": "108 minutes",
+      "genre": "Animation, Action, Mystery",
+      "image": "Naruto_blood_prison.jpg"
+    },
+    {
+      "id": 4,
+      "name": "Jujutsu Kaisen 0",
+      "rating": 7.8,
+      "director": "Sunghoo Park",
+      "year": 2021,
+      "boxOffice": "$196.2 million",
+      "runtime": "112 minutes",
+      "genre": "Animation, Action, Fantasy",
+      "image": "Jujutsu_Kaisen_0.png"
+    },
+    {
+      "id": 5,
+      "name": "Bleach: Hell Verse",
+      "rating": 7.3,
+      "director": "Noriyuki Abe",
+      "year": 2010,
+      "boxOffice": "$8.5 million",
+      "runtime": "94 minutes",
+      "genre": "Animation, Action, Adventure",
+      "image": "bleach_hellverse.jpg"
+    }
+  ]
+}
+

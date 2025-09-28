@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anime Movie Collection</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container hidden">
+        <!-- Header -->
+        <header class="header">
+            <h1>Movies</h1>
+            <p>Search and discover amazing movies with ratings</p>
+        </header>
+
+        <!-- Search and Controls -->
+        <div class="controls">
+            <div class="search-container">
+                <div class="search-icon">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21 21L16.514 16.506M19 10.5C19 15.194 15.194 19 10.5 19S2 15.194 2 10.5S5.806 2 10.5 2S19 5.806 19 10.5Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                </div>
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    class="search-input" 
+                    placeholder="Search movies..."
+                    autocomplete="off"
+                >
+            </div>
+            <select id="sortSelect" class="sort-select">
+                <option value="name">Sort by Name</option>
+                <option value="year">Sort by Year</option>
+                <option value="rating">Sort by Rating</option>
+            </select>
+        </div>
+
+        <!-- Loading State -->
+        <div id="loadingState" class="loading-state">
+            <div class="loading-spinner"></div>
+            <p>Loading movies from JSON...</p>
+        </div>
+
+        <!-- Error State -->
+        <div id="errorState" class="error-state hidden">
+            <div class="error-content">
+                <h3>Failed to load movie data</h3>
+                <p>Please check your connection and try again.</p>
+                <button id="retryBtn" class="retry-btn">Retry</button>
+            </div>
+        </div>
+
+        <!-- No Results -->
+        <div id="noResults" class="no-results hidden">
+            <h3>No movies found</h3>
+            <p>Try adjusting your search terms.</p>
+        </div>
+
+        <!-- Movies Grid (Empty initially - populated by JavaScript) -->
+        <main class="movies-grid" id="moviesGrid">
+            <!-- Movie cards will be generated here by JavaScript -->
+        </main>
+    </div>
+
+    <!-- Intro Video -->
+    <video id="introVideo" autoplay muted class="intro-video">
+        <source src="Blue and Yellow Modern Animated Opening Profile Youtube Intro Video (1).mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <script src="app.js"></script>
+</body>
+</html>
